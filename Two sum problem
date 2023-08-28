@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int arr[100],n,target,count=0,i,k=1,j;
+    printf("Enter the numbers : \n");
+    scanf("%d",&n);
+    printf("Enter target : \n");
+    scanf("%d",&target);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter Array Position %d : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {for(j=i+1;j<n;j++)
+    {
+        if(arr[i]+arr[j]==target)
+        {
+            count++;
+            printf("\n %d Pair of %d is %d and %d",k,target,arr[i],arr[j]);
+            k++;
+        }
+        
+    }
+}
+ printf("\nNumber of target pair is %d",count);
+ return 0;
+ }
