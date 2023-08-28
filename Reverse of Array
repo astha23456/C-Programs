@@ -1,0 +1,31 @@
+/******************************************************************************
+            To reverse an array from a particular position
+*******************************************************************************/
+#include<stdio.h>
+void main()
+{
+    int a[5];
+    int i,n;
+    for(i=0;i<5;i++)
+    {
+        printf("Enter elements : ");
+        scanf("%d",&a[i]);
+    }
+    printf("\nElements : \n");
+    for(i=0;i<=5;i++)
+    {
+        printf("%d\t",a[i]);
+    }
+    printf("\nEnter start position : \n");
+    scanf("%d",&n);
+    
+    for(i=0;i<n;i++)
+    {
+        printf("%d",a[i]);
+    }
+    for(i=5;i>=n;i--)
+    {
+        printf("%d",a[i]);
+    }
+   
+}
