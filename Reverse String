@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+char s[20];
+int x;
+clrscr();
+printf("Enter your name : ");
+gets(s);
+x=strlen(s);
+for(;x>0;)
+{
+ --x;
+ printf("%c\t",s[x]);
+}
+getch();
+}
